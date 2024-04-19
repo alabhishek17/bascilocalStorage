@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hi</h1>
+    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+
+    <script>
+        let text=document.getElementById("textarea");
+         function savelocal(){
+            localStorage.setItem("saveText",text.value)
+         }
+        if(localStorage.getItem("saverText")){
+            text=localStorage.getItem
+        }
+        text.addEventListener("input",savelocal)
+    </script>
+</body>
+</html>
